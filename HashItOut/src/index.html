@@ -38,8 +38,8 @@ th{
   padding: 20px 15px;
   text-align: left;
   font-weight: 500;
-  font-size: 12px;
-  color: #fff;
+  font-size: 18px;
+  color:black;
   text-transform: uppercase;
 }
 td{
@@ -47,10 +47,10 @@ td{
   text-align: left;
   vertical-align:middle;
   font-weight: 300;
-  font-size: 12px;
+  font-size: 15px;
   color: #fff;
   width: 20%;
-  border-bottom: solid 1px rgba(255,255,255,0.1);
+  border-bottom:;
 }
 .t1{
   font-size: 7px;
@@ -181,7 +181,7 @@ $('#id05 .quantity').on('blur',function(){
     <table class="table">
       <thead>
         <tr>
-          <th scope="col">#</th>
+          <th scope="col">Serial No.</th>
           <th scope="col">Company Name</th>
           <th scope="col">Share Code</th>
           <th scope="col">Buy Price</th>
@@ -211,7 +211,7 @@ $('#id05 .quantity').on('blur',function(){
       <div class="w3-container">
         <p>1</p>
         <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-      <form onSubmit="App.buyshare();">
+      <form onSubmit="App.buyshare('id01');">
         <div class="form-group" id="1">
           <label>Quantity</label>
           <input type="number" class="form-control quantity" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -232,15 +232,15 @@ $('#id05 .quantity').on('blur',function(){
       <div class="w3-container">
         <p>2</p>
         <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-      <form>
+      <form onSubmit="App.buyshare('id02');">
         <div class="form-group">
           <label>Quantity</label>
-          <input type="number" class="form-control quantity" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <input type="number" class="form-control quantity" id="id02" aria-describedby="emailHelp">
           
         </div>
         <div class="form-group">
           <label>Amount</label>
-          <input type="number" class="form-control amount" id="exampleInputPassword1">
+          <input type="number" class="form-control amount" id="id02">
         </div>
         <button type="submit" class="btn btn-primary">Buy</button>
       </form>
@@ -253,7 +253,7 @@ $('#id05 .quantity').on('blur',function(){
       <div class="w3-container">
         <p>3</p>
         <span onclick="document.getElementById('id03').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-      <form>
+      <form onSubmit="App.buyshare('id03');">
         <div class="form-group">
           <label>Quantity</label>
           <input type="number" class="form-control quantity" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -273,7 +273,7 @@ $('#id05 .quantity').on('blur',function(){
     <div class="w3-modal-content">
       <div class="w3-container">
         <span onclick="document.getElementById('id04').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-      <form>
+      <form onSubmit="App.buyshare('id04');">
         <div class="form-group">
           <label>Quantity</label>
           <input type="number" class="form-control quantity" id="exampleInputEmail1" aria-describedby="emailHelp">
