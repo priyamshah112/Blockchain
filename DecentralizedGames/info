@@ -1,0 +1,8 @@
+Nethereum is used to integrate Unity3D and Web3 games
+Nethereum->https://nethereum.readthedocs.io/en/latest/Nethereum.Workbooks/docs/nethereum-gettingstarted-infura/
+One can buy,sell,trade inside games via this currency via wallets connected to metamask.Changes Whole game economy from ads revenue to in-App trading revenue.
+Use of ERC721 is done majorly as it is non-fungible meaning no two ethereum token are same rate one can be more costlier than other at a time.Used majorly for Games,Ownership of Assets etc.
+Use of ERC20 is done majorly as fungible meaning same price of each token. 
+Solidity -> https://media.readthedocs.org/pdf/solidity/develop/solidity.pdf,
+https://ethereumbuilders.gitbooks.io/guide/content/en/solidity_tutorials.html
+Ethereum -> https://ethereumbuilders.gitbooks.io/guide/content/en/index.html
