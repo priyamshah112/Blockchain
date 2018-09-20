@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>WebRTC with SkylinkJS</title>
+  <link rel="stylesheet" type="text/css" href="P2P WebRTC.css">
+  <script src="https://cdn.temasys.io/skylink/skylinkjs/0.6.x/skylink.complete.min.js"></script>
+  <script type="text/javascript" src="P2P WebRTC.js"></script>
+</head>
+<body>
+
+  <header>
+    <a href="http://skylink.io/web">More about SkylinkJS</a>
+    <input type="text" id="name" placeholder="My name" autofocus />
+    <button onclick="setName()">Set my name</button>
+    <button onclick="joinRoom()">Join room</button>
+    <button onclick="leaveRoom()">Leave room</button>
+    <br/>
+    <input type="text" id="message" placeholder="My message" />
+    <button onclick="sendMessage()">Send message</button>
+    <a href="https://codepen.io/temasys/pen/LGpMxj" target="_blank">Open a new tab to chat with yourself</a>
+  </header>
+  
+  <div id="container">
+    <div id="chatbox"></div>
+  </div>
+  
+</body>
+</html>
